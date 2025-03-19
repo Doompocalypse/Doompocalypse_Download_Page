@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import FeaturesSection from "@/components/FeaturesSection";
+import FeaturesSection from "@/components/FeatureSection";
 import ProductDisplay from "@/components/ProductDisplay";
 import Footer from "@/components/Footer";
 
