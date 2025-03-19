@@ -63,8 +63,6 @@ const ProductDisplay = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, []);
-  return <section id="products" className="py-20 md:py-32 bg-white overflow-hidden">
-      
-    </section>;
+  return;
 };
 export default ProductDisplay;
