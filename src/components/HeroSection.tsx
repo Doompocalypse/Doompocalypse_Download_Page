@@ -1,112 +1,38 @@
-
-import React, { useEffect, useRef } from "react";
-import { cn } from "@/lib/utils";
+import React from "react";
 
 const HeroSection = () => {
-  const headingRef = useRef<HTMLHeadingElement>(null);
-  const paragraphRef = useRef<HTMLParagraphElement>(null);
-  const buttonRef = useRef<HTMLDivElement>(null);
-  const imageRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Animate elements on load
-    const animateElements = () => {
-      setTimeout(() => {
-        if (headingRef.current) {
-          headingRef.current.classList.add("opacity-100", "translate-y-0");
-        }
-      }, 300);
-
-      setTimeout(() => {
-        if (paragraphRef.current) {
-          paragraphRef.current.classList.add("opacity-100", "translate-y-0");
-        }
-      }, 600);
-
-      setTimeout(() => {
-        if (buttonRef.current) {
-          buttonRef.current.classList.add("opacity-100", "translate-y-0");
-        }
-      }, 900);
-
-      setTimeout(() => {
-        if (imageRef.current) {
-          imageRef.current.classList.add("opacity-100", "translate-y-0");
-        }
-      }, 1200);
-    };
-
-    animateElements();
-  }, []);
-
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      <div className="container-custom flex flex-col lg:flex-row items-center">
-        {/* Text content */}
-        <div className="w-full lg:w-1/2 z-10 pb-16 lg:pb-0">
-          <div className="max-w-xl">
-            <span className="inline-block px-3 py-1 mb-6 text-xs font-medium bg-gray-100 rounded-full">
-              The Future of Design
-            </span>
-            <h1 
-              ref={headingRef}
-              className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight leading-tight mb-6 opacity-0 -translate-y-10 transition-all duration-700"
-            >
-              Beautiful Design <br />
-              <span className="text-neutral-500">Simplicity in Details</span>
+    <section className="flex overflow-hidden relative flex-col w-full min-h-[780px] pt-[475px] max-md:pt-24 max-md:max-w-full">
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets/3f57732bd8d6487c80729f13e27523e0/4a731cae3a94e7747985b66966166d65c2ecd97a?placeholderIfAbsent=true"
+        alt="Doompocalypse Game Background"
+        className="object-cover absolute inset-0 size-full"
+      />
+      <div className="flex relative flex-col justify-center px-16 py-20 w-full max-md:px-5 max-md:max-w-full">
+        <div className="flex flex-wrap gap-5 justify-between px-7 py-6 w-full bg-black rounded-3xl border border-solid border-zinc-500 border-opacity-70 max-w-[1260px] shadow-[0px_0px_33px_rgba(0,0,0,0.1)] max-md:px-5 max-md:max-w-full">
+          <div className="flex flex-col my-auto text-white max-md:max-w-full">
+            <h1 className="text-4xl font-black leading-none uppercase max-md:max-w-full">
+              Play Doompocalypse
             </h1>
-            <p 
-              ref={paragraphRef}
-              className="text-lg text-gray-600 mb-8 opacity-0 -translate-y-10 transition-all duration-700 delay-200"
-            >
-              Experience the perfect blend of minimalism and functionality. 
-              Every detail meticulously crafted for an unparalleled user experience.
+            <p className="self-start mt-8 text-2xl leading-none">
+              Play on PC with the Epic Games Store.
             </p>
-            <div 
-              ref={buttonRef}
-              className="flex flex-wrap gap-4 opacity-0 -translate-y-10 transition-all duration-700 delay-300"
-            >
-              <a 
-                href="#features"
-                className="px-6 py-3 bg-black text-white rounded-full btn-hover hover:shadow-lg transition-shadow duration-300"
-              >
-                Explore Features
-              </a>
-              <a 
-                href="#products"
-                className="px-6 py-3 border border-gray-300 rounded-full btn-hover hover:bg-gray-50 transition-colors"
-              >
-                View Products
-              </a>
-            </div>
           </div>
-        </div>
-
-        {/* Image */}
-        <div 
-          ref={imageRef}
-          className="w-full lg:w-1/2 relative h-96 lg:h-[600px] opacity-0 translate-y-10 transition-all duration-700 delay-400"
-        >
-          <div className="absolute top-0 right-0 w-full h-full">
-            <div className="relative w-full h-full parallax-bg">
-              <div className="relative w-full h-full overflow-hidden rounded-2xl shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-tr from-gray-100/80 to-transparent mix-blend-overlay"></div>
-                <img
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
-                  alt="Technology minimalism"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-100 rounded-full animate-float"></div>
-              <div className="absolute top-10 -right-6 w-20 h-20 bg-white rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+          <div className="text-center">
+            <div className="px-8 py-3.5 bg-white rounded-xl text-stone-950 max-md:px-5">
+              <p className="text-xs leading-none">
+                get it on the epic games store
+              </p>
+              <p className="mt-2 text-xl font-bold tracking-tight leading-none">
+                DOWNLOAD NOW
+              </p>
             </div>
+            <button className="px-9 py-3 mt-2.5 text-base font-bold leading-none text-white uppercase rounded-lg bg-white bg-opacity-30 max-md:px-5">
+              more ways to play
+            </button>
           </div>
         </div>
       </div>
-
-      {/* Background decorations */}
-      <div className="absolute top-20 left-10 w-64 h-64 bg-gray-100 rounded-full opacity-50 -z-10"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 bg-gray-100 rounded-full opacity-50 -z-10"></div>
     </section>
   );
 };
