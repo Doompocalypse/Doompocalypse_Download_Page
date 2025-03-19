@@ -1,3 +1,4 @@
+
 import React from "react";
 
 interface FeatureCardProps {
@@ -12,17 +13,19 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
 }) => {
   return (
-    <article className="grow pb-6 w-full text-white rounded-3xl bg-white bg-opacity-10 shadow-[0px_5px_15px_rgba(0,0,0,0.29)] max-md:mt-6">
-      <img
-        src={image}
-        alt={title}
-        className="object-contain overflow-hidden w-full rounded-3xl aspect-square"
-      />
-      <div className="flex flex-col px-5 mt-6">
-        <h3 className="self-start text-xl font-bold leading-none">{title}</h3>
-        <p className="mt-4 text-lg leading-7">{description}</p>
+    <div className="bg-zinc-900 rounded-lg overflow-hidden">
+      <div className="aspect-square">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover"
+        />
       </div>
-    </article>
+      <div className="p-5">
+        <h3 className="text-white font-semibold text-lg mb-2">{title}</h3>
+        <p className="text-gray-300 text-sm">{description}</p>
+      </div>
+    </div>
   );
 };
 

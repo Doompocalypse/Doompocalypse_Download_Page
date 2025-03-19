@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 function Landingpage() {
   return (
-    <main className="overflow-hidden bg-stone-950">
+    <main className="overflow-hidden bg-black min-h-screen">
       <Header />
       <HeroSection />
       <FeatureSection />

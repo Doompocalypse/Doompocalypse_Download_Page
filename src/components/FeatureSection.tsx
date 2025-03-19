@@ -1,3 +1,4 @@
+
 import React from "react";
 import FeatureCard from "./FeatureCard";
 
@@ -5,56 +6,44 @@ const FeatureSection = () => {
   const features = [
     {
       id: 1,
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/3f57732bd8d6487c80729f13e27523e0/f87f71ec2200d80da0fe34c824be775d28656ce5?placeholderIfAbsent=true",
+      image: "https://images.unsplash.com/photo-1536243289408-7671af8a630c?q=80&w=1924&auto=format&fit=crop",
       title: "Get a Crypto Wallet",
-      description:
-        "Lorem ipsum dolor si consctur adipicing elit Nullam lacat elit se qis tinunt mis.",
+      description: "Lorem ipsum dolor si consctur adipicing elit Nullam lacat elit se qis tinunt mis.",
     },
     {
       id: 2,
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/3f57732bd8d6487c80729f13e27523e0/4482f0f35a7910ea659f62590b078e9c6ab71cfe?placeholderIfAbsent=true",
-      title: "grab some Doomcoin",
-      description:
-        "Lorem ipsum dolor si consctur adipicing elit Nullam lacat elit se qis tinunt mis.",
+      image: "https://images.unsplash.com/photo-1621501103258-3e190133e076?q=80&w=1780&auto=format&fit=crop",
+      title: "Grab Some Doomcoin",
+      description: "Lorem ipsum dolor si consctur adipicing elit Nullam lacat elit se qis tinunt mis.",
     },
     {
       id: 3,
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/3f57732bd8d6487c80729f13e27523e0/329b4b0a99175b72e7c2895ec9d7e9389ac5229a?placeholderIfAbsent=true",
-      title: "download game",
-      description:
-        "Lorem ipsum dolor si consctur adipicing elit Nullam lacat elit se qis tinunt mis.",
+      image: "https://images.unsplash.com/photo-1560253023-3ec5d502959f?q=80&w=1780&auto=format&fit=crop",
+      title: "Download Game",
+      description: "Lorem ipsum dolor si consctur adipicing elit Nullam lacat elit se qis tinunt mis.",
     },
     {
       id: 4,
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/3f57732bd8d6487c80729f13e27523e0/517d34b9d3bc60a1210abdb6d73aed130b21e9a1?placeholderIfAbsent=true",
-      title: "Gather some courage",
-      description:
-        "Lorem ipsum dolor si consctur adipicing elit Nullam lacat elit se qis tinunt mis.",
+      image: "https://images.unsplash.com/photo-1510266001953-7bbfc5e78a95?q=80&w=1784&auto=format&fit=crop",
+      title: "Gather Some Courage",
+      description: "Lorem ipsum dolor si consctur adipicing elit Nullam lacat elit se qis tinunt mis.",
     },
   ];
 
   return (
-    <section className="flex flex-col items-start px-20 mt-5 w-full max-md:px-5 max-md:max-w-full">
-      <h2 className="text-5xl font-bold leading-none text-white max-md:max-w-full max-md:text-4xl">
-        Play. Earn. Repeat
-      </h2>
-      <p className="mt-8 text-lg leading-none text-white">
-        The Future of Gaming is Here
-      </p>
-      <div className="self-stretch mt-7 max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col">
+    <section className="bg-black py-16">
+      <div className="container mx-auto px-6">
+        <h2 className="text-5xl font-bold text-white mb-4">Play. Earn. Repeat</h2>
+        <p className="text-xl text-white mb-12">The Future Of Gaming Is Here</p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature) => (
-            <div key={feature.id} className="w-3/12 max-md:ml-0 max-md:w-full">
-              <FeatureCard
-                image={feature.image}
-                title={feature.title}
-                description={feature.description}
-              />
-            </div>
+            <FeatureCard
+              key={feature.id}
+              image={feature.image}
+              title={feature.title}
+              description={feature.description}
+            />
           ))}
         </div>
       </div>
