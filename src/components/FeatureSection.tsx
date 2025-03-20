@@ -1,3 +1,4 @@
+
 import React from "react";
 import FeatureCard from "./FeatureCard";
 
@@ -7,9 +8,9 @@ const FeatureSection = () => {
       id: 1,
       image:
         "https://cdn.builder.io/api/v1/image/assets/3f57732bd8d6487c80729f13e27523e0/f87f71ec2200d80da0fe34c824be775d28656ce5?placeholderIfAbsent=true",
-      title: "Get a Crypto Wallet",
+      title: "Create A New Crypto Wallet",
       description:
-        "Lorem ipsum dolor si consctur adipicing elit Nullam lacat elit se qis tinunt mis.",
+        "You will need it to seperate your earnings from the rest of your digital assets",
     },
     {
       id: 2,
