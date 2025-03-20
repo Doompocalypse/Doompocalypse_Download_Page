@@ -1,8 +1,9 @@
+
 import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex overflow-hidden relative flex-col py-16 mt-40 w-full min-h-[490px] max-md:mt-10 max-md:max-w-full">
+    <footer className="flex overflow-hidden relative flex-col py-16 w-full min-h-[490px] max-md:mt-10 max-md:max-w-full">
       <img
         src="https://cdn.builder.io/api/v1/image/assets/3f57732bd8d6487c80729f13e27523e0/436fca8aae981323de5f9b48ae44a58335ba4bd8?placeholderIfAbsent=true"
         alt="Footer Background"
