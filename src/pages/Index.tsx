@@ -1,8 +1,9 @@
 
 import React, { useEffect } from "react";
-import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import FeatureSection from "@/components/FeatureSection";
+import FeaturesSection from "@/components/FeatureSection";
+import ProductDisplay from "@/components/ProductDisplay";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -36,10 +37,11 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black overflow-hidden">
-      <Header />
+    <div className="min-h-screen bg-white overflow-hidden">
+      <Navbar />
       <HeroSection />
-      <FeatureSection />
+      <FeaturesSection />
+      <ProductDisplay />
       <Footer />
     </div>
   );
