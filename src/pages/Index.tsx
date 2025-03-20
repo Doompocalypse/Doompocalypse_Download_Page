@@ -1,9 +1,11 @@
+
 import React, { useEffect } from "react";
-import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeatureSection";
 import ProductDisplay from "@/components/ProductDisplay";
 import Footer from "@/components/Footer";
+
 const Index = () => {
   useEffect(() => {
     // Reveal animations on scroll
@@ -28,12 +30,16 @@ const Index = () => {
       observer.disconnect();
     };
   }, []);
-  return <div className="min-h-screen overflow-hidden bg-neutral-950">
-      <Navbar />
+  
+  return (
+    <div className="min-h-screen overflow-hidden bg-neutral-950">
+      <Header />
       <HeroSection />
       <FeaturesSection />
       <ProductDisplay />
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
