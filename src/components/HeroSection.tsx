@@ -8,9 +8,7 @@ const HeroSection = () => {
             <h1 className="text-4xl font-black leading-none uppercase max-md:max-w-full">
               Play Doompocalypse
             </h1>
-            <p className="self-start mt-8 text-2xl leading-none">
-              Play on PC with the Epic Games Store.
-            </p>
+            <p className="self-start mt-8 text-2xl leading-none">Play on PC</p>
           </div>
           <div className="text-center">
             <div className="px-8 py-3.5 bg-white rounded-xl text-stone-950 max-md:px-5">
