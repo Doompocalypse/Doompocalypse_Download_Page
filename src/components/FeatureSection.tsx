@@ -24,9 +24,9 @@ const FeatureSection = () => {
       id: 3,
       image:
         "https://cdn.builder.io/api/v1/image/assets/3f57732bd8d6487c80729f13e27523e0/329b4b0a99175b72e7c2895ec9d7e9389ac5229a?placeholderIfAbsent=true",
-      title: "download game",
+      title: "Download Game",
       description:
-        "Lorem ipsum dolor si consctur adipicing elit Nullam lacat elit se qis tinunt mis.",
+        "Enter The Doompocalypse Metaverse",
     },
     {
       id: 4,
