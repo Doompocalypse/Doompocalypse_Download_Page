@@ -37,7 +37,7 @@ const Index = () => {
       <HeroSection />
       <FeaturesSection />
       <ProductDisplay />
-      <div className="-mt-20">
+      <div className="-mt-40">
         <Footer />
       </div>
     </div>
