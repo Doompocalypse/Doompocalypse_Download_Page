@@ -32,9 +32,9 @@ const FeatureSection = () => {
       id: 4,
       image:
         "https://cdn.builder.io/api/v1/image/assets/3f57732bd8d6487c80729f13e27523e0/517d34b9d3bc60a1210abdb6d73aed130b21e9a1?placeholderIfAbsent=true",
-      title: "Gather some courage",
+      title: "Gather Some Courage",
       description:
-        "Lorem ipsum dolor si consctur adipicing elit Nullam lacat elit se qis tinunt mis.",
+        "Sorry...we're all sold out.",
     },
   ];
 
