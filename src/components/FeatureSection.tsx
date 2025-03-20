@@ -16,9 +16,9 @@ const FeatureSection = () => {
       id: 2,
       image:
         "https://cdn.builder.io/api/v1/image/assets/3f57732bd8d6487c80729f13e27523e0/4482f0f35a7910ea659f62590b078e9c6ab71cfe?placeholderIfAbsent=true",
-      title: "grab some Doomcoin",
+      title: "Load Your New Wallet",
       description:
-        "Lorem ipsum dolor si consctur adipicing elit Nullam lacat elit se qis tinunt mis.",
+        "Load $21 worth of ETH to your new wallet to enter the Doompocalypse",
     },
     {
       id: 3,
